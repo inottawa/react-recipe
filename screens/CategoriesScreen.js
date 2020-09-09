@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Button,
-  StyleSheet,
-  FlatList,
-  TouchableOpacity,
-} from 'react-native';
+import { FlatList } from 'react-native';
 import { CATEGORIES } from '../data/dummy-data';
 import Colors from '../constants/Colors';
 import CategoryGridTile from '../components/CategoryGridTile';
@@ -34,14 +27,6 @@ const CategoriesScreen = props => {
     />
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
 
 CategoriesScreen.options = {
   headerTitle: 'Meal Categories',
